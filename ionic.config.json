@@ -1,0 +1,7 @@
+{
+  "name": "T4SGdemo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
