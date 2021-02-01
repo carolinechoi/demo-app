@@ -14,11 +14,7 @@
         <ion-label position="stacked">Password (6+ characters)</ion-label>
         <ion-input class="title" type="password" [(ngModel)]="user.password"></ion-input>
       </ion-item>
-      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-        <ion-fab-button (click)="signup(user)">
-          <ion-icon name="arrow-round-forward"></ion-icon>
-        </ion-fab-button>
-      </ion-fab>    
+      <ion-button expand="block" class="goProfile" fill="solid" (click)="signup(user)">Go to profile</ion-button>
     </div>
   </div>
 </ion-content>

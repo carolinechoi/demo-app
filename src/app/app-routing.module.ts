@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'add-profile',
     loadChildren: () => import('./add-profile/add-profile.module').then( m => m.AddProfilePageModule)
   },
+  {
+    path: 'landing',
+    loadChildren: () => import('./landing/landing.module').then( m => m.LandingPageModule)
+  },
 ];
 
 @NgModule({

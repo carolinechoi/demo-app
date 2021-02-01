@@ -1,9 +1,48 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>add-profile</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" id="page">
+  <div id="container">
+    <p id="title">Hey,</p>
+    <p id="subtitle">Complete your profile to finish signing up<br>with the World Health Organization.</p>
 
-<ion-content>
+    <div class="list">
+      <ion-item>
+        <ion-label position="stacked">Full Name</ion-label>
+        <ion-input class="title" type="text" [(ngModel)]="user.displayName"></ion-input>
+      </ion-item>
+        <ion-list class="covid-check">
+          <ion-radio-group value="covid-check" [(ngModel)]="user.sick"> 
+            <ion-list-header>
+              <ion-label>Have you had COVID before?</ion-label>
+            </ion-list-header>
+            <ion-item>
+              <ion-label>Yes</ion-label>
+              <ion-radio slot="end" value="True"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>No</ion-label>
+              <ion-radio slot="end" value="False"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
 
+        <ion-list class="vaccine-check">
+          <ion-radio-group value="vaccine-check" [(ngModel)]="user.vaccinated"> 
+            <ion-list-header>
+              <ion-label>Have you received a COVID vaccination before?</ion-label>
+            </ion-list-header>
+
+            <ion-item>
+              <ion-label>Yes</ion-label>
+              <ion-radio slot="end" value="True"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>No</ion-label>
+              <ion-radio slot="end" value="False"></ion-radio>
+            </ion-item>
+
+          </ion-radio-group>
+
+        </ion-list>
+      <ion-button expand="block" class="goProfile" fill="solid" (click)="makeProfile(user)">Finish!</ion-button>
+    </div>
+  </div>
 </ion-content>
