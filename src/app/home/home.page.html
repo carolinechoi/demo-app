@@ -1,10 +1,13 @@
 <ion-content [fullscreen]="true" id="page">
   <div id="container">
-    <p id="title">World Health Organization</p>
-    <p id="subtitle">vaccine distribution</p>
+    <p id="title">Join us and<br>let's get vaccinated.</p>
+    <p id="subtitle">To start, please login or sign up.<br>You can also continue as a guest.</p>
     <div class="buttons">
-      <ion-button class="login" fill="outline" href="/login">Login</ion-button>
-      <ion-button class="signup" href="/signup">Sign Up</ion-button>      
+      <ion-button expand="block" class="login" fill="outline" href="/login">Login</ion-button>
+      <ion-button expand="block" class="signup" href="/signup">Sign Up</ion-button>      
+    </div>
+    <div class="guest">
+      <p id="goGuest"><a href="/landing">Or continue as a guest.</a></p>
     </div>
   </div>
 </ion-content>

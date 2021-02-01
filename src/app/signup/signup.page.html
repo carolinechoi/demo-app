@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true" id="page">
+  <!-- <ion-icon name="arrow-back-outline"></ion-icon>   -->
+  <div id="container">
+    <p id="goLogin"><a href="/login">Login instead here.</a></p>
+    <p id="title">Sign Up</p>
+    <p id="subtitle">Let's get vaccinated!</p>
+
+    <div class="list">
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input class="title" type="email" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Password (6+ characters)</ion-label>
+        <ion-input class="title" type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button (click)="signup(user)">
+          <ion-icon name="arrow-round-forward"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>    
+    </div>
+  </div>
+</ion-content>
