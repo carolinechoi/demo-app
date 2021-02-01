@@ -1,3 +1,8 @@
+ion-toolbar {
+  ion-title {
+    color: --ion-color-primary;
+  }
+}
 #container {
   text-align: center;
 
@@ -17,7 +22,7 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: secondary;
 
   margin: 0;
 }
