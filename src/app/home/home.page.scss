@@ -1,32 +1,47 @@
-ion-toolbar {
-  ion-title {
-    color: --ion-color-primary;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
+
+$font: 'Work Sans';
+$font2: "Josefin Sans";
+
+//colours
+$a: "#c1deba";
+$b: "#fbf3eb";
+$c: "#e7c4b1";
+
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
+  #title {
+    font-family: $font;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  #subtitle {
+    font-family: $font2;
+    font-size: 20px;
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: secondary;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+.buttons {
+  font-family: $font2;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  .signup {
+    --background: #c1deba;
+    letter-spacing: 2px;
+    display: block;
+  }
+  .login {
+    color: #c1deba;
+    --border-color: #c1deba;
+    letter-spacing: 2px;
+    display: block;
+  }
 }
