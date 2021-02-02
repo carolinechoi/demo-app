@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
+
+$font: 'Work Sans';
+$font2: "Josefin Sans";
+
+//colours
+$a: "#817e79";
+$b: "#fbf3eb";
+$c: "#e7c4b1";
+
+ion-content {
+  --ion-background-color: #F3F0EA;
+}
+
+ion-icon {
+    color: #AAA9A4;
+    font-size: 50px;
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+#container {
+    margin-top: -20px;
+    margin-left: 200px;
+    #title {
+        font-family: $font;
+        font-size: 45px;
+        color: #303031;
+        font-weight: 700;
+    }
+    #subtitle {
+        font-family: $font2;
+        font-size: 16px;
+        margin-top: -20px;
+        color: #303031;
+    }
+}
