@@ -1,9 +1,16 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-title> World Health Organization</ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
   <ion-icon name="bandage-outline"></ion-icon>
 
-  <div id="container">
-    <p id="title">Hello Caroline,</p>
-    <p id="subtitle">Here's your medical information:</p>
+  <div id="container" *ngFor = "let user of current">
+    <p *ngIf="currentUser" id="title">Hello, {{user.displayName}}.</p>
+    <p id="title" *ngIf="currentUser == null">Hello,</p>
+    <p id="subtitle" *ngIf="currentUser">Here's your medical information:</p>
   </div>
 
 </ion-content>

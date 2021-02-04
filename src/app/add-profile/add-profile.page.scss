@@ -10,15 +10,17 @@ $b: "#fbf3eb";
 $c: "#e7c4b1";
 
 ion-content {
-  --ion-background-color: #F3F0EA;
+  --ion-background-color: #303031;
 }
 
-// ion-icon {
-//     color: #AAA9A4;
-//     font-size: 50px;
-//     margin-left: 300px;
-//     margin-top: 100px;
-// }
+ion-toolbar {
+  --background: #f3f0ea;
+  ion-title {
+      font-family: $font;
+      font-weight: 700;
+      color: #303031;
+  }    
+}
 
 #container {
   text-align: center;
@@ -31,19 +33,19 @@ ion-content {
       a {
         font-family: $font2;
         font-size: 15px;
-        color: black;
+        color: #f3f0ea;
       }
   }
   #title {
     font-family: $font;
-    color: #303031;
+    color: #f3f0ea;
     font-weight: 700;
     font-size: 50px;
   }
   #subtitle {
     font-family: $font2;
     font-size: 16px;
-    color: #303031;
+    color: #f3f0ea;
     margin-top: -20px;
   }
 }
@@ -56,6 +58,28 @@ ion-content {
   text-align: center;
   margin-top: 50px;
   border-color: white;
+  --background: #303031;
+  ion-input {
+    --background: #303031;
+  }
+  ion-item {
+    --background: #303031;
+    --background-activated: #c1deba;
+  }
+  ion-label {
+    color: #f3f0ea;
+    --color-activated: #f3f0ea;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    font-family: $font2;
+  }
+  ion-item, ion-list-header, ion-radio, .covid-check {
+    --background: #303031;
+    --border-color: #303031;
+  }
+  ion-radio {
+    --color-checked: #c1deba;
+  }
 }
 
 .goProfile {
@@ -69,4 +93,5 @@ ion-content {
     display: block;
     height: 60px;
     width: 300px;
+    --background: #c1deba;
 }

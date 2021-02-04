@@ -13,12 +13,14 @@ ion-content {
   --ion-background-color: #F3F0EA;
 }
 
-// ion-icon {
-//     color: #AAA9A4;
-//     font-size: 50px;
-//     margin-left: 300px;
-//     margin-top: 100px;
-// }
+#header {
+  --background: #303031;
+  #hTitle {
+      font-family: $font;
+      font-weight: 700;
+      color: #F3F0EA;
+  }    
+}
 
 #container {
   text-align: center;
@@ -56,6 +58,20 @@ ion-content {
   text-align: center;
   margin-top: 50px;
   border-color: white;
+  --background: #f3f0ea;
+  ion-input {
+    --background: #F3F0EA;
+  }
+  ion-item {
+    --background: #f3f0ea;
+    --background-activated: #c1deba;
+  }
+  ion-label {
+    color: #303031;
+    --color-activated: #303031;
+    margin-bottom: 7px;
+    margin-top: 5px;
+  }
 }
 
 .goProfile {
@@ -69,4 +85,5 @@ ion-content {
     display: block;
     height: 60px;
     width: 300px;
+    --background: #c1deba;
 }
