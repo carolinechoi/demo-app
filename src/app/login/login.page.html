@@ -1,9 +1,25 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
+  <ion-toolbar id="header" mode="ios">
+    <ion-title id="hTitle"> World Health Organization</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true" id="page">
+  <div id="container">
+    <p id="goLogin"><a href="/signup">Sign Up instead here.</a></p>
+    <p id="title">Log In</p>
+    <p id="subtitle">Welcome back!</p>
 
+    <div class="list">
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input class="title" type="email" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Password (6+ characters)</ion-label>
+        <ion-input class="title" type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+      <ion-button expand="block" class="goProfile" fill="solid" (click)="login(user)">Log In!</ion-button>
+    </div>
+  </div>
 </ion-content>

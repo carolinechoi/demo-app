@@ -9,8 +9,23 @@
 
   <div id="container" *ngFor = "let user of current">
     <p *ngIf="currentUser" id="title">Hello, {{user.displayName}}.</p>
-    <p id="title" *ngIf="currentUser == null">Hello,</p>
     <p id="subtitle" *ngIf="currentUser">Here's your medical information:</p>
+    <p id="subtitle" *ngIf="currentUser">• It is {{user.sick}} that you have had Covid.</p>
+    <p id="subtitle" *ngIf="currentUser">• It is {{user.vaccinated}} that you have been vaccinated already.</p>
   </div>
 
+  <div id="container" *ngIf = "currentUser == null">
+    <p id="title" *ngIf = "currentUser == null">Hello,</p>
+    <p id="subtitle" *ngIf = "currentUser == null">Please log in or sign up to view medical information.</p>
+    <br><p id="subtitle" *ngIf = "currentUser == null">Here are some COVID-19 resources:</p>
+    <p id="subtitle" *ngIf = "currentUser == null"><a href="https://www.who.int/">World Health Organization page</a></p>
+    <p id="subtitle" *ngIf = "currentUser == null"><a href="https://www.who.int/">Advice for the Public</a></p>
+    <p id="subtitle" *ngIf = "currentUser == null"><a href="https://www.who.int/">General Precautions</a></p>
+    <p id="subtitle" *ngIf = "currentUser == null"><a href="https://www.who.int/">President Biden's plan for vaccination</a></p>
+  </div>
+
+  <ion-button *ngIf = "currentUser" expand="block" class="goProfile" fill="solid" (click)="signOut()">Log Out</ion-button>
+  
+  <ion-button *ngIf = "currentUser == null" expand="block" class="login" fill="outline" href="/login">Login</ion-button>
+  <ion-button *ngIf = "currentUser == null" expand="block" class="signup" href="/signup">Sign Up</ion-button>      
 </ion-content>

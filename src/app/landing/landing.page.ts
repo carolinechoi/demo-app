@@ -60,6 +60,12 @@ export class LandingPage implements OnInit {
     await loading.dismiss();
   }
 
+  async signOut() {
+    this.afAuth.signOut();
+    this.route.navigateByUrl('/home');
+  }
+
+
   ngOnInit() {
   }
 

@@ -61,16 +61,20 @@ ion-content {
   --background: #f3f0ea;
   ion-input {
     --background: #F3F0EA;
+    color: #303031;
+    font-family: $font2;
   }
   ion-item {
     --background: #f3f0ea;
     --background-activated: #c1deba;
+    --color-activated: #303031;
   }
   ion-label {
     color: #303031;
     --color-activated: #303031;
     margin-bottom: 7px;
     margin-top: 5px;
+    font-family: $font2;
   }
 }
 
